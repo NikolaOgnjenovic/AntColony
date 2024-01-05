@@ -8,7 +8,8 @@ import matplotlib.pyplot as plt
 
 
 class City:
-    def __init__(self, x: float, y: float):
+    def __init__(self, index: str, x: float, y: float):
+        self.index = index
         self.x = x
         self.y = y
 
@@ -55,7 +56,7 @@ def parse(filepath: str) -> List[City]:
         for line in lines:
             line = line.replace("\n", "")
             line = line.split(" ")
-            cities.append(City(float(line[1]), float(line[2])))
+            cities.append(City(str(line[0]), float(line[1]), float(line[2])))
 
         return cities
 
@@ -70,7 +71,7 @@ def plot(cities: List[City], shortest_path_indices: List[int], shortest_path_len
        shortest_path_length (float): Dužina najkraćeg puta.
        title (string): Naslov za grafik.
     """
-    x_coords, y_coords = zip(*cities)
+    city_indices, x_coords, y_coords = zip(*cities)
 
     # Prikazivanje gradova
     plt.scatter(x_coords, y_coords, color='red')
@@ -79,6 +80,7 @@ def plot(cities: List[City], shortest_path_indices: List[int], shortest_path_len
     for i in range(len(shortest_path_indices) - 1):
         city1, city2 = shortest_path_indices[i], shortest_path_indices[i + 1]
         plt.plot([x_coords[city1], x_coords[city2]], [y_coords[city1], y_coords[city2]], color='blue')
+        plt.text(x_coords[city1], y_coords[city1], city_indices[city1], fontsize=8, ha='center', va='bottom', color='black')
 
     # Dodavanje labela
     plt.title(f'Najkraći put za {title} - dužina = {shortest_path_length}')
@@ -100,6 +102,11 @@ def run(n_ants: int, n_iterations: int, decay: float, alpha: float, beta: float,
     # Prikazivanje rešenja
     plot(cities, shortest_path_indices, shortest_path_length, title)
     print(f"Ukupna dužina najkraćeg puta: {shortest_path_length}")
+    print(f"Najkraći put:")
+    for index in shortest_path_indices:
+        print(cities[index].index)
+
+    print("\n")
 
 
 if __name__ == '__main__':
