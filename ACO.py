@@ -1,11 +1,11 @@
 import numpy as np
 from numpy.random import choice as np_choice
-from typing import List, Tuple, Union
+from typing import List, Tuple
 
 
 class AntColony(object):
     def __init__(self, distances: np.ndarray, n_ants: int, n_iterations: int, decay: float,
-                 alpha: Union[int, float] = 1, beta: Union[int, float] = 1, seed: float = 42):
+                 alpha: float = 1.0, beta: float = 1.0, seed: float = 42):
         """
         Inicijalizuje AntColony objekat.
 
@@ -13,7 +13,7 @@ class AntColony(object):
             distances (2D numpy.array): Matrica udaljenosti. Na dijagonali je pretpostavljena vrednost np.inf.
             n_ants (int): Broj mrava koji se koriste po iteraciji.
             n_iterations (int): Broj iteracija.
-            decay (float): Vrednost kojom se množi vrednost feromona svaku iteraciju.
+            decay (float): Vrednost raspada feromona. Uticaj feromona je se množi sa (1 - decay) svaku iteraciju.
             alpha (int or float): Eksponent za feromone, veće alfa daje veći uticaj feromona. Default=1
             beta (int or float): Eksponent za udaljenost, veće beta daje veći uticaj udaljenosti. Default=1
             seed (float): Seed za generisanje nasumičnih brojeva. Default=42
@@ -24,8 +24,8 @@ class AntColony(object):
         self.n_ants: int = n_ants
         self.n_iterations: int = n_iterations
         self.decay: float = decay
-        self.alpha: Union[int, float] = alpha
-        self.beta: Union[int, float] = beta
+        self.alpha: float = alpha
+        self.beta: float = beta
         np.random.seed(seed)
 
     def run(self) -> Tuple[List[int], float]:
@@ -42,7 +42,7 @@ class AntColony(object):
             shortest_path = min(all_paths, key=lambda x: x[1])
             if shortest_path[1] < all_time_shortest_path[1]:
                 all_time_shortest_path = shortest_path
-            self.pheromone = self.pheromone * self.decay
+            self.pheromone = self.pheromone * (1 - self.decay)
         return all_time_shortest_path
 
     def spread_pheromone(self, all_paths: List[Tuple[List[int], float]]) -> None:
@@ -56,21 +56,6 @@ class AntColony(object):
         for path, dist in sorted_paths:
             for move in path:
                 self.pheromone[move] += 1.0 / self.distances[move]
-
-    def gen_path_dist(self, path: List[int]) -> float:
-        """
-        Računa ukupnu udaljenost zadate putanje.
-
-        Args:
-            path (List[int]): Lista indeksa gradova koji predstavljaju putanju.
-
-        Returns:
-            float: Ukupna udaljenost puta.
-        """
-        total_dist = 0
-        for i in range(len(path) - 1):
-            total_dist += self.distances[path[i], path[i + 1]]
-        return total_dist
 
     def gen_all_paths(self) -> List[Tuple[List[int], float]]:
         """
@@ -105,6 +90,21 @@ class AntColony(object):
             prev = move
             visited.add(move)
         return path
+
+    def gen_path_dist(self, path: List[int]) -> float:
+        """
+        Računa ukupnu udaljenost zadate putanje.
+
+        Args:
+            path (List[int]): Lista indeksa gradova koji predstavljaju putanju.
+
+        Returns:
+            float: Ukupna udaljenost puta.
+        """
+        total_dist = 0
+        for i in range(len(path) - 1):
+            total_dist += self.distances[path[i], path[i + 1]]
+        return total_dist
 
     def pick_move(self, pheromone: np.ndarray, dist: float, visited: set) -> int:
         """

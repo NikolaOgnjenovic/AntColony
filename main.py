@@ -60,49 +60,60 @@ def parse(filepath: str) -> List[City]:
         return cities
 
 
-def plot(cities: List[City], shortest_path_indices: List[int], shortest_path_distance: float):
+def plot(cities: List[City], shortest_path_indices: List[int], shortest_path_length: float, title: str):
     """
-    Generiše matricu udaljenosti između gradova.
+    Prikazuje na grafiku najkraći put koristeći date podatke.
 
     Args:
        cities (List[City]): Lista gradova.
        shortest_path_indices (List[int]): Lista indeksa gradova u najkraćem putu.
-       shortest_path_distance (float): Distanca najkraćeg puta.
-
-    Returns:
-       np.ndarray: Matrica udaljenosti između gradova.
+       shortest_path_length (float): Dužina najkraćeg puta.
+       title (string): Naslov za grafik.
     """
     x_coords, y_coords = zip(*cities)
 
     # Prikazivanje gradova
     plt.scatter(x_coords, y_coords, color='red')
 
-    # Prikazivanje najkrace putanje
+    # Prikazivanje najkraće putanje
     for i in range(len(shortest_path_indices) - 1):
         city1, city2 = shortest_path_indices[i], shortest_path_indices[i + 1]
         plt.plot([x_coords[city1], x_coords[city2]], [y_coords[city1], y_coords[city2]], color='blue')
 
     # Dodavanje labela
-    plt.title(f'Najkraći put - Distanca: {shortest_path_distance}')
+    plt.title(f'Najkraći put za {title} - dužina = {shortest_path_length}')
     plt.xlabel('X koordinata')
     plt.ylabel('Y koordinata')
 
     plt.show()
 
 
-def run():
+def run(n_ants: int, n_iterations: int, decay: float, alpha: float, beta: float, seed: int, title: str):
     # Parsiranje gradova i matrice udaljenosti
     cities = parse('data_tsp.txt')
     distances = get_distance_matrix(cities)
 
     # Pokretanje algoritma
-    ant_colony = AntColony(distances, 1, 100, 0.95, alpha=1, beta=1, seed=42)
-    (shortest_path_indices, shortest_path_distance) = ant_colony.run()
+    ant_colony = AntColony(distances, n_ants, n_iterations, decay, alpha=alpha, beta=beta, seed=seed)
+    (shortest_path_indices, shortest_path_length) = ant_colony.run()
 
-    # Prikazivanje resenja
-    plot(cities, shortest_path_indices, shortest_path_distance)
-    print(f"Ukupna distanca najkraćeg puta: {shortest_path_distance}")
+    # Prikazivanje rešenja
+    plot(cities, shortest_path_indices, shortest_path_length, title)
+    print(f"Ukupna dužina najkraćeg puta: {shortest_path_length}")
 
 
 if __name__ == '__main__':
-    run()
+    # Default konfiguracija
+    run(5, 100, 0.9, 1.0, 1.0, 42, "default konfiguraciju")
+
+    # Povećan uticaj feromona
+    run(5, 100, 0.9, 2.0, 1.0, 42, "povećan uticaj feromona")
+
+    # Povećan uticaj udaljenosti
+    run(5, 100, 0.9, 1.0, 2.0, 42, "povećan uticaj udaljenosti")
+
+    # Sporiji raspad feromona
+    run(5, 100, 0.3, 1.0, 1.0, 42, "sporiji raspad feromona")
+
+    # Povećan broj mrava
+    run(20, 100, 0.9, 1.0, 1.0, 42, "povećan broj mrava")
