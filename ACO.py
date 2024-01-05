@@ -4,23 +4,23 @@ from typing import List, Tuple, Union
 
 
 class AntColony(object):
-
-    def __init__(self, distances: np.ndarray, n_ants: int, n_iterations: int, decay: float, alpha: Union[int, float] = 1, beta: Union[int, float] = 1, seed: float = 42):
+    def __init__(self, distances: np.ndarray, n_ants: int, n_iterations: int, decay: float,
+                 alpha: Union[int, float] = 1, beta: Union[int, float] = 1, seed: float = 42):
         """
-        Args:
-            distances (2D numpy.array): Square matrix of distances. Diagonal is assumed to be np.inf.
-            n_ants (int): Number of ants running per iteration
-            n_iteration (int): Number of iterations
-            decay (float): Rate it which pheromone decays. The pheromone value is multiplied by decay, so 0.95 will lead to decay, 0.5 to much faster decay.
-            alpha (int or float): exponent on pheromone, higher alpha gives pheromone more weight. Default=1
-            beta (int or float): exponent on distance, higher beta gives distance more weight. Default=1
+        Inicijalizuje AntColony objekat.
 
-        Example:
-            ant_colony = AntColony(german_distances, 100, 20, 2000, 0.95, alpha=1, beta=2)
+        Args:
+            distances (2D numpy.array): Matrica udaljenosti. Na dijagonali je pretpostavljena vrednost np.inf.
+            n_ants (int): Broj mrava koji se koriste po iteraciji.
+            n_iterations (int): Broj iteracija.
+            decay (float): Vrednost kojom se množi vrednost feromona svaku iteraciju.
+            alpha (int or float): Eksponent za feromone, veće alfa daje veći uticaj feromona. Default=1
+            beta (int or float): Eksponent za udaljenost, veće beta daje veći uticaj udaljenosti. Default=1
+            seed (float): Seed za generisanje nasumičnih brojeva. Default=42
         """
         self.distances: np.ndarray = distances
         self.pheromone: np.ndarray = np.ones(self.distances.shape) / len(distances)
-        self.all_inds: range = range(len(distances))
+        self.all_indices: range = range(len(distances))
         self.n_ants: int = n_ants
         self.n_iterations: int = n_iterations
         self.decay: float = decay
@@ -28,8 +28,14 @@ class AntColony(object):
         self.beta: Union[int, float] = beta
         np.random.seed(seed)
 
-    def run(self) -> Tuple[List[Tuple[int, int]], float]:
-        all_time_shortest_path: Tuple[List[Tuple[int, int]], float] = ([(-1, -1)], np.inf)
+    def run(self) -> Tuple[List[int], float]:
+        """
+        Pokreće algoritam optimizacije.
+
+        Returns:
+            Tuple: Torka stvari koja sadrži sortiran niz indeksa gradova obiđenih u najkraćem putu i pređenu distancu.
+        """
+        all_time_shortest_path: Tuple[List[int], float] = ([-1], np.inf)
         for i in range(self.n_iterations):
             all_paths = self.gen_all_paths()
             self.spread_pheromone(all_paths)
@@ -39,44 +45,84 @@ class AntColony(object):
             self.pheromone = self.pheromone * self.decay
         return all_time_shortest_path
 
-    def spread_pheromone(self, all_paths: List[Tuple[List[Tuple[int, int]], float]]) -> None:
+    def spread_pheromone(self, all_paths: List[Tuple[List[int], float]]) -> None:
+        """
+        Ažurira nivoe feromona na putanjama koje su pređene od strane mrava.
+
+        Args:
+            all_paths (List[Tuple[List[int], float]]): Lista putanja i njihovih udaljenosti.
+        """
         sorted_paths = sorted(all_paths, key=lambda x: x[1])
         for path, dist in sorted_paths:
             for move in path:
                 self.pheromone[move] += 1.0 / self.distances[move]
 
-    def gen_path_dist(self, path: List[Tuple[int, int]]) -> float:
+    def gen_path_dist(self, path: List[int]) -> float:
+        """
+        Računa ukupnu udaljenost zadate putanje.
+
+        Args:
+            path (List[int]): Lista indeksa gradova koji predstavljaju putanju.
+
+        Returns:
+            float: Ukupna udaljenost puta.
+        """
         total_dist = 0
-        for ele in path:
-            total_dist += self.distances[ele]
+        for i in range(len(path) - 1):
+            total_dist += self.distances[path[i], path[i + 1]]
         return total_dist
 
-    def gen_all_paths(self) -> List[Tuple[List[Tuple[int, int]], float]]:
+    def gen_all_paths(self) -> List[Tuple[List[int], float]]:
+        """
+        Generiše putanje za sve mrave.
+
+        Returns:
+            List[Tuple[List[int], float]]: Lista putanja i njihovih udaljenosti.
+        """
         all_paths = []
         for i in range(self.n_ants):
             path = self.gen_path(0)
             all_paths.append((path, self.gen_path_dist(path)))
         return all_paths
 
-    def gen_path(self, start: int) -> List[Tuple[int, int]]:
-        path = []
+    def gen_path(self, start: int) -> List[int]:
+        """
+        Generiše putanju za pojedinačnog mrava.
+
+        Args:
+            start (int): Početna tačka za mrava.
+
+        Returns:
+            List[int]: Lista indeksa gradova koji predstavljaju putanju.
+        """
+        path = [start]
         visited = set()
         visited.add(start)
         prev = start
         for i in range(len(self.distances) - 1):
             move = self.pick_move(self.pheromone[prev], self.distances[prev], visited)
-            path.append((prev, move))
+            path.append(move)
             prev = move
             visited.add(move)
-        path.append((prev, start))  # going back to where we started
         return path
 
     def pick_move(self, pheromone: np.ndarray, dist: float, visited: set) -> int:
+        """
+        Bira sledeći korak za mrava na osnovu nivoa feromona i udaljenosti.
+
+        Args:
+            pheromone (np.ndarray): Nivoi feromona na potezima.
+            dist (float): Matrica udaljenosti.
+            visited (set): Skup posećenih poteza.
+
+        Returns:
+            int: Indeks grada koji mrav obilazi u sledećem koraku.
+        """
         pheromone = np.copy(pheromone)
         pheromone[list(visited)] = 0
 
         row = pheromone ** self.alpha * ((1.0 / dist) ** self.beta)
 
         norm_row = row / row.sum()
-        move = np_choice(self.all_inds, 1, p=norm_row)[0]
+        move = np_choice(self.all_indices, 1, p=norm_row)[0]
         return move

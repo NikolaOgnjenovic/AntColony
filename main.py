@@ -1,5 +1,5 @@
 import math
-from typing import List, Tuple
+from typing import List
 
 from ACO import AntColony
 
@@ -7,59 +7,101 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def get_distance_matrix(cities):
+class City:
+    def __init__(self, x: float, y: float):
+        self.x = x
+        self.y = y
+
+    def __iter__(self):
+        return iter(self.__dict__.values())
+
+
+def get_distance_matrix(cities: List[City]):
+    """
+    Generiše matricu udaljenosti između gradova.
+
+    Args:
+       cities (List[City]): Lista gradova.
+
+    Returns:
+       np.ndarray: Matrica udaljenosti.
+    """
     distances = []
     for city in cities:
         arr = []
-        for neighbours in cities:
-            if city == neighbours:
+        for neighbour in cities:
+            if city == neighbour:
                 arr.append(np.inf)
             else:
-                arr.append(math.sqrt((city[0] - neighbours[0]) ** 2 + (city[1] - neighbours[1]) ** 2))
+                arr.append(math.sqrt((city.x - neighbour.x) ** 2 + (city.y - neighbour.y) ** 2))
         distances.append(arr)
+
     return np.array(distances)
 
 
-def parse(filename: str) -> List[Tuple[float, float]]:
+def parse(filepath: str) -> List[City]:
+    """
+    Parsira datoteku sa podacima o gradovima.
+
+    Args:
+        filepath (str): Putanja do datoteke.
+
+    Returns:
+        List[City]: Lista gradova sa koordinatama.
+    """
     cities = []
-    with open(filename, 'r') as file:
+    with open(filepath, 'r') as file:
         lines = file.readlines()
         for line in lines:
             line = line.replace("\n", "")
             line = line.split(" ")
-            cities.append((float(line[1]), float(line[2])))
+            cities.append(City(float(line[1]), float(line[2])))
+
         return cities
 
 
-def plot(cities: List[Tuple[float, float]], shortest_path_cities: List[Tuple[int, int]]):
+def plot(cities: List[City], shortest_path_indices: List[int], shortest_path_distance: float):
+    """
+    Generiše matricu udaljenosti između gradova.
+
+    Args:
+       cities (List[City]): Lista gradova.
+       shortest_path_indices (List[int]): Lista indeksa gradova u najkraćem putu.
+       shortest_path_distance (float): Distanca najkraćeg puta.
+
+    Returns:
+       np.ndarray: Matrica udaljenosti između gradova.
+    """
     x_coords, y_coords = zip(*cities)
 
-    # Plotting the cities
+    # Prikazivanje gradova
     plt.scatter(x_coords, y_coords, color='red')
 
-    # Plotting the shortest path
-    for edge in shortest_path_cities:
-        city1, city2 = edge
+    # Prikazivanje najkrace putanje
+    for i in range(len(shortest_path_indices) - 1):
+        city1, city2 = shortest_path_indices[i], shortest_path_indices[i + 1]
         plt.plot([x_coords[city1], x_coords[city2]], [y_coords[city1], y_coords[city2]], color='blue')
 
-    # Adding labels
-    plt.title(f'Shortest Path starting from {shortest_path_cities[0][0]}')
-    plt.xlabel('X Coordinate')
-    plt.ylabel('Y Coordinate')
+    # Dodavanje labela
+    plt.title(f'Najkraći put - Distanca: {shortest_path_distance}')
+    plt.xlabel('X koordinata')
+    plt.ylabel('Y koordinata')
 
-    # Show the plot
     plt.show()
 
 
 def run():
-    cities = parse('mravinjak.txt')
+    # Parsiranje gradova i matrice udaljenosti
+    cities = parse('data_tsp.txt')
     distances = get_distance_matrix(cities)
 
+    # Pokretanje algoritma
     ant_colony = AntColony(distances, 1, 100, 0.95, alpha=1, beta=1, seed=42)
-    (shortest_path_cities, shortest_path_distance) = ant_colony.run()
+    (shortest_path_indices, shortest_path_distance) = ant_colony.run()
 
-    plot(cities, shortest_path_cities)
-    print(f"Shortest path distance: {shortest_path_distance}")
+    # Prikazivanje resenja
+    plot(cities, shortest_path_indices, shortest_path_distance)
+    print(f"Ukupna distanca najkraćeg puta: {shortest_path_distance}")
 
 
 if __name__ == '__main__':
