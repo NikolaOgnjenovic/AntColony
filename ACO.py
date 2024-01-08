@@ -5,7 +5,7 @@ from typing import List, Tuple
 
 class AntColony(object):
     def __init__(self, distances: np.ndarray, n_ants: int, n_iterations: int, decay: float,
-                 alpha: float = 1.0, beta: float = 1.0, seed: float = 42):
+                 alpha: float = 1.0, beta: float = 1.0, q: int = 1000, seed: float = 42):
         """
         Inicijalizuje AntColony objekat.
 
@@ -16,16 +16,18 @@ class AntColony(object):
             decay (float): Vrednost raspada feromona. Uticaj feromona je se množi sa (1 - decay) svaku iteraciju.
             alpha (int or float): Eksponent za feromone, veće alfa daje veći uticaj feromona. Default=1
             beta (int or float): Eksponent za udaljenost, veće beta daje veći uticaj udaljenosti. Default=1
+            q (int): Konstanta koja predstavlja kolicinu feromona koju mrav ispusta kroz put. Default = 1000
             seed (float): Seed za generisanje nasumičnih brojeva. Default=42
         """
         self.distances: np.ndarray = distances
-        self.pheromone: np.ndarray = np.ones(self.distances.shape) / len(distances)
+        self.pheromone: np.ndarray = np.ones(self.distances.shape)
         self.all_indices: range = range(len(distances))
         self.n_ants: int = n_ants
         self.n_iterations: int = n_iterations
         self.decay: float = decay
         self.alpha: float = alpha
         self.beta: float = beta
+        self.q = q
         np.random.seed(seed)
 
     def run(self) -> Tuple[List[int], float]:
@@ -42,7 +44,6 @@ class AntColony(object):
             shortest_path = min(all_paths, key=lambda x: x[1])
             if shortest_path[1] < all_time_shortest_path[1]:
                 all_time_shortest_path = shortest_path
-            self.pheromone = self.pheromone * (1 - self.decay)
         return all_time_shortest_path
 
     def spread_pheromone(self, all_paths: List[Tuple[List[int], float]]) -> None:
@@ -52,10 +53,10 @@ class AntColony(object):
         Args:
             all_paths (List[Tuple[List[int], float]]): Lista putanja i njihovih udaljenosti.
         """
-        sorted_paths = sorted(all_paths, key=lambda x: x[1])
-        for path, dist in sorted_paths:
-            for move in path:
-                self.pheromone[move] += 1.0 / self.distances[move]
+        self.pheromone = self.pheromone * (1 - self.decay)
+        for path, dist in all_paths:
+            for i in range(len(path)-1):
+                self.pheromone[path[i]][path[i+1]] += self.q/dist
 
     def gen_all_paths(self) -> List[Tuple[List[int], float]]:
         """

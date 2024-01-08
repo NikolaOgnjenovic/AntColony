@@ -77,10 +77,12 @@ def plot(cities: List[City], shortest_path_indices: List[int], shortest_path_len
     plt.scatter(x_coords, y_coords, color='red')
 
     # Prikazivanje najkraće putanje
+    
     for i in range(len(shortest_path_indices) - 1):
         city1, city2 = shortest_path_indices[i], shortest_path_indices[i + 1]
         plt.plot([x_coords[city1], x_coords[city2]], [y_coords[city1], y_coords[city2]], color='blue')
         plt.text(x_coords[city1], y_coords[city1], city_indices[city1], fontsize=8, ha='center', va='bottom', color='black')
+    
 
     # Dodavanje labela
     plt.title(f'Najkraći put za {title} - dužina = {shortest_path_length}')
@@ -101,26 +103,29 @@ def run(n_ants: int, n_iterations: int, decay: float, alpha: float, beta: float,
 
     # Prikazivanje rešenja
     plot(cities, shortest_path_indices, shortest_path_length, title)
-    print(f"Ukupna dužina najkraćeg puta: {shortest_path_length}")
+    
     print(f"Najkraći put:")
     for index in shortest_path_indices:
         print(cities[index].index)
-
+    print(f"Ukupna dužina najkraćeg puta: {shortest_path_length}")
     print("\n")
 
 
 if __name__ == '__main__':
     # Default konfiguracija
-    run(5, 100, 0.9, 1.0, 1.0, 42, "default konfiguraciju")
+    run(20, 100, 0.5, 1, 1, 42, "default konfiguraciju")
 
-    # Povećan uticaj feromona
-    run(5, 100, 0.9, 2.0, 1.0, 42, "povećan uticaj feromona")
+    # Najbolja konfiguracija (0.1 1 8 daje istu putanju)
+    run(20, 100, 0.5, 1, 7, 42, "najbolju konfiguraciju")
 
-    # Povećan uticaj udaljenosti
-    run(5, 100, 0.9, 1.0, 2.0, 42, "povećan uticaj udaljenosti")
+    # Konfiguracija sa povecanim uticajem distance
+    run(20, 100, 0.5, 1, 8, 42, "povecan uticaj distance")
 
-    # Sporiji raspad feromona
-    run(5, 100, 0.3, 1.0, 1.0, 42, "sporiji raspad feromona")
+    # Konfiguracija sa povecanim uticajem feromona
+    run(20, 100, 0.5, 9, 1, 42, "povecan uticaj feromona")
 
-    # Povećan broj mrava
-    run(20, 100, 0.9, 1.0, 1.0, 42, "povećan broj mrava")
+    # Konfiguracija sa sporijim isparavanjem feromona
+    run(20, 100, 0.1, 1, 1, 42, "sporije isparavanje feromona")
+
+    # Konfiguracija sa brzim isparavanjem feromona
+    run(20, 100, 0.9, 1, 1, 42, "brze isparavanje feromona")

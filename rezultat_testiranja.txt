@@ -1,0 +1,970 @@
+Ro: 0.1 Alpha: 1 Beta: 1
+Ukupna dužina najkraćeg puta: 6086.190313003959
+
+
+Ro: 0.1 Alpha: 1 Beta: 2
+Ukupna dužina najkraćeg puta: 5655.414779790154
+
+
+Ro: 0.1 Alpha: 1 Beta: 3
+Ukupna dužina najkraćeg puta: 5611.367755982336
+
+
+Ro: 0.1 Alpha: 1 Beta: 4
+Ukupna dužina najkraćeg puta: 5528.843443077293
+
+
+Ro: 0.1 Alpha: 1 Beta: 5
+Ukupna dužina najkraćeg puta: 5583.618828279893
+
+
+Ro: 0.1 Alpha: 1 Beta: 6
+Ukupna dužina najkraćeg puta: 5572.0940457458955
+
+
+Ro: 0.1 Alpha: 1 Beta: 7
+Ukupna dužina najkraćeg puta: 5527.929965023238
+
+
+Ro: 0.1 Alpha: 1 Beta: 8
+Ukupna dužina najkraćeg puta: 5524.893579541445
+
+
+Ro: 0.1 Alpha: 1 Beta: 9
+Ukupna dužina najkraćeg puta: 5624.859520260231
+
+
+Ro: 0.1 Alpha: 2 Beta: 1
+Ukupna dužina najkraćeg puta: 6207.711049975782
+
+
+Ro: 0.1 Alpha: 2 Beta: 2
+Ukupna dužina najkraćeg puta: 5622.569460665986
+
+
+Ro: 0.1 Alpha: 2 Beta: 3
+Ukupna dužina najkraćeg puta: 5971.163607828364
+
+
+Ro: 0.1 Alpha: 2 Beta: 4
+Ukupna dužina najkraćeg puta: 5627.943141492796
+
+
+Ro: 0.1 Alpha: 2 Beta: 5
+Ukupna dužina najkraćeg puta: 5803.081363331146
+
+
+Ro: 0.1 Alpha: 2 Beta: 6
+Ukupna dužina najkraćeg puta: 5827.194246062892
+
+
+Ro: 0.1 Alpha: 2 Beta: 7
+Ukupna dužina najkraćeg puta: 5722.486161990468
+
+
+Ro: 0.1 Alpha: 2 Beta: 8
+Ukupna dužina najkraćeg puta: 5595.770224624467
+
+
+Ro: 0.1 Alpha: 2 Beta: 9
+Ukupna dužina najkraćeg puta: 5624.859520260231
+
+
+Ro: 0.1 Alpha: 3 Beta: 1
+Ukupna dužina najkraćeg puta: 6354.966787853697
+
+
+Ro: 0.1 Alpha: 3 Beta: 2
+Ukupna dužina najkraćeg puta: 6056.690579505248
+
+
+Ro: 0.1 Alpha: 3 Beta: 3
+Ukupna dužina najkraćeg puta: 6174.653104314404
+
+
+Ro: 0.1 Alpha: 3 Beta: 4
+Ukupna dužina najkraćeg puta: 5606.564754008824
+
+
+Ro: 0.1 Alpha: 3 Beta: 5
+Ukupna dužina najkraćeg puta: 5826.016887932862
+
+
+Ro: 0.1 Alpha: 3 Beta: 6
+Ukupna dužina najkraćeg puta: 5612.249265013009
+
+
+Ro: 0.1 Alpha: 3 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.1 Alpha: 3 Beta: 8
+Ukupna dužina najkraćeg puta: 5588.078747952141
+
+
+Ro: 0.1 Alpha: 3 Beta: 9
+Ukupna dužina najkraćeg puta: 5645.723278865549
+
+
+Ro: 0.1 Alpha: 4 Beta: 1
+Ukupna dužina najkraćeg puta: 6154.580996606523
+
+
+Ro: 0.1 Alpha: 4 Beta: 2
+Ukupna dužina najkraćeg puta: 5729.908573805419
+
+
+Ro: 0.1 Alpha: 4 Beta: 3
+Ukupna dužina najkraćeg puta: 6119.842018561552
+
+
+Ro: 0.1 Alpha: 4 Beta: 4
+Ukupna dužina najkraćeg puta: 5956.346934994127
+
+
+Ro: 0.1 Alpha: 4 Beta: 5
+Ukupna dužina najkraćeg puta: 5703.915973317593
+
+
+Ro: 0.1 Alpha: 4 Beta: 6
+Ukupna dužina najkraćeg puta: 5728.657876960133
+
+
+Ro: 0.1 Alpha: 4 Beta: 7
+Ukupna dužina najkraćeg puta: 5768.224481048063
+
+
+Ro: 0.1 Alpha: 4 Beta: 8
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.1 Alpha: 4 Beta: 9
+Ukupna dužina najkraćeg puta: 5645.723278865549
+
+
+Ro: 0.1 Alpha: 5 Beta: 1
+Ukupna dužina najkraćeg puta: 6589.507079815506
+
+
+Ro: 0.1 Alpha: 5 Beta: 2
+Ukupna dužina najkraćeg puta: 6012.492346342805
+
+
+Ro: 0.1 Alpha: 5 Beta: 3
+Ukupna dužina najkraćeg puta: 5831.646070653096
+
+
+Ro: 0.1 Alpha: 5 Beta: 4
+Ukupna dužina najkraćeg puta: 5905.69113740453
+
+
+Ro: 0.1 Alpha: 5 Beta: 5
+Ukupna dužina najkraćeg puta: 5952.690237473518
+
+
+Ro: 0.1 Alpha: 5 Beta: 6
+Ukupna dužina najkraćeg puta: 6035.753706366683
+
+
+Ro: 0.1 Alpha: 5 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.1 Alpha: 5 Beta: 8
+Ukupna dužina najkraćeg puta: 5611.090718360245
+
+
+Ro: 0.1 Alpha: 5 Beta: 9
+Ukupna dužina najkraćeg puta: 5665.160006333114
+
+
+Ro: 0.1 Alpha: 6 Beta: 1
+Ukupna dužina najkraćeg puta: 6704.170201373666
+
+
+Ro: 0.1 Alpha: 6 Beta: 2
+Ukupna dužina najkraćeg puta: 6262.036527480302
+
+
+Ro: 0.1 Alpha: 6 Beta: 3
+Ukupna dužina najkraćeg puta: 5975.330688836473
+
+
+Ro: 0.1 Alpha: 6 Beta: 4
+Ukupna dužina najkraćeg puta: 5905.69113740453
+
+
+Ro: 0.1 Alpha: 6 Beta: 5
+Ukupna dužina najkraćeg puta: 6054.635739463034
+
+
+Ro: 0.1 Alpha: 6 Beta: 6
+Ukupna dužina najkraćeg puta: 5969.715437507209
+
+
+Ro: 0.1 Alpha: 6 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.1 Alpha: 6 Beta: 8
+Ukupna dužina najkraćeg puta: 5611.090718360245
+
+
+Ro: 0.1 Alpha: 6 Beta: 9
+Ukupna dužina najkraćeg puta: 5824.19380890152
+
+
+Ro: 0.1 Alpha: 7 Beta: 1
+Ukupna dužina najkraćeg puta: 6709.6699994180535
+
+
+Ro: 0.1 Alpha: 7 Beta: 2
+Ukupna dužina najkraćeg puta: 6501.70989849477
+
+
+Ro: 0.1 Alpha: 7 Beta: 3
+Ukupna dužina najkraćeg puta: 5933.299012756345
+
+
+Ro: 0.1 Alpha: 7 Beta: 4
+Ukupna dužina najkraćeg puta: 6003.054648858501
+
+
+Ro: 0.1 Alpha: 7 Beta: 5
+Ukupna dužina najkraćeg puta: 5950.978279730228
+
+
+Ro: 0.1 Alpha: 7 Beta: 6
+Ukupna dužina najkraćeg puta: 5977.5426457319245
+
+
+Ro: 0.1 Alpha: 7 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.1 Alpha: 7 Beta: 8
+Ukupna dužina najkraćeg puta: 5611.090718360245
+
+
+Ro: 0.1 Alpha: 7 Beta: 9
+Ukupna dužina najkraćeg puta: 5824.19380890152
+
+
+Ro: 0.1 Alpha: 8 Beta: 1
+Ukupna dužina najkraćeg puta: 7275.632661216745
+
+
+Ro: 0.1 Alpha: 8 Beta: 2
+Ukupna dužina najkraćeg puta: 6431.455150563064
+
+
+Ro: 0.1 Alpha: 8 Beta: 3
+Ukupna dužina najkraćeg puta: 6139.765218416591
+
+
+Ro: 0.1 Alpha: 8 Beta: 4
+Ukupna dužina najkraćeg puta: 5779.0673889824
+
+
+Ro: 0.1 Alpha: 8 Beta: 5
+Ukupna dužina najkraćeg puta: 5859.00843033506
+
+
+Ro: 0.1 Alpha: 8 Beta: 6
+Ukupna dužina najkraćeg puta: 5935.081381333434
+
+
+Ro: 0.1 Alpha: 8 Beta: 7
+Ukupna dužina najkraćeg puta: 5768.224481048063
+
+
+Ro: 0.1 Alpha: 8 Beta: 8
+Ukupna dužina najkraćeg puta: 5611.090718360245
+
+
+Ro: 0.1 Alpha: 8 Beta: 9
+Ukupna dužina najkraćeg puta: 5934.080373377288
+
+
+Ro: 0.1 Alpha: 9 Beta: 1
+Ukupna dužina najkraćeg puta: 7126.031818800282
+
+
+Ro: 0.1 Alpha: 9 Beta: 2
+Ukupna dužina najkraćeg puta: 6204.947736677877
+
+
+Ro: 0.1 Alpha: 9 Beta: 3
+Ukupna dužina najkraćeg puta: 6179.593414286873
+
+
+Ro: 0.1 Alpha: 9 Beta: 4
+Ukupna dužina najkraćeg puta: 5970.2982761912
+
+
+Ro: 0.1 Alpha: 9 Beta: 5
+Ukupna dužina najkraćeg puta: 5908.774473735549
+
+
+Ro: 0.1 Alpha: 9 Beta: 6
+Ukupna dužina najkraćeg puta: 5966.820550805189
+
+
+Ro: 0.1 Alpha: 9 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.1 Alpha: 9 Beta: 8
+Ukupna dužina najkraćeg puta: 5755.243959168673
+
+
+Ro: 0.1 Alpha: 9 Beta: 9
+Ukupna dužina najkraćeg puta: 5793.764722604047
+
+
+Ro: 0.5 Alpha: 1 Beta: 1
+Ukupna dužina najkraćeg puta: 5851.10049321603
+
+
+Ro: 0.5 Alpha: 1 Beta: 2
+Ukupna dužina najkraćeg puta: 5698.638869683969
+
+
+Ro: 0.5 Alpha: 1 Beta: 3
+Ukupna dužina najkraćeg puta: 5539.541876276495
+
+
+Ro: 0.5 Alpha: 1 Beta: 4
+Ukupna dužina najkraćeg puta: 5683.59163084121
+
+
+Ro: 0.5 Alpha: 1 Beta: 5
+Ukupna dužina najkraćeg puta: 5804.312586865775
+
+
+Ro: 0.5 Alpha: 1 Beta: 6
+Ukupna dužina najkraćeg puta: 5572.0940457458955
+
+
+Ro: 0.5 Alpha: 1 Beta: 7
+Ukupna dužina najkraćeg puta: 5524.893579541445
+
+
+Ro: 0.5 Alpha: 1 Beta: 8
+Ukupna dužina najkraćeg puta: 5722.032284231651
+
+
+Ro: 0.5 Alpha: 1 Beta: 9
+Ukupna dužina najkraćeg puta: 5649.0300373210985
+
+
+Ro: 0.5 Alpha: 2 Beta: 1
+Ukupna dužina najkraćeg puta: 6313.647805831464
+
+
+Ro: 0.5 Alpha: 2 Beta: 2
+Ukupna dužina najkraćeg puta: 6072.446491778858
+
+
+Ro: 0.5 Alpha: 2 Beta: 3
+Ukupna dužina najkraćeg puta: 5991.6490856164
+
+
+Ro: 0.5 Alpha: 2 Beta: 4
+Ukupna dužina najkraćeg puta: 5611.983753132971
+
+
+Ro: 0.5 Alpha: 2 Beta: 5
+Ukupna dužina najkraćeg puta: 5799.501500510263
+
+
+Ro: 0.5 Alpha: 2 Beta: 6
+Ukupna dužina najkraćeg puta: 5592.812537545445
+
+
+Ro: 0.5 Alpha: 2 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.5 Alpha: 2 Beta: 8
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.5 Alpha: 2 Beta: 9
+Ukupna dužina najkraćeg puta: 5621.159947581206
+
+
+Ro: 0.5 Alpha: 3 Beta: 1
+Ukupna dužina najkraćeg puta: 6854.7482919033
+
+
+Ro: 0.5 Alpha: 3 Beta: 2
+Ukupna dužina najkraćeg puta: 6010.709305275638
+
+
+Ro: 0.5 Alpha: 3 Beta: 3
+Ukupna dužina najkraćeg puta: 5973.3019083113195
+
+
+Ro: 0.5 Alpha: 3 Beta: 4
+Ukupna dužina najkraćeg puta: 5657.500304367299
+
+
+Ro: 0.5 Alpha: 3 Beta: 5
+Ukupna dužina najkraćeg puta: 5827.567040692577
+
+
+Ro: 0.5 Alpha: 3 Beta: 6
+Ukupna dužina najkraćeg puta: 5971.324927455409
+
+
+Ro: 0.5 Alpha: 3 Beta: 7
+Ukupna dužina najkraćeg puta: 5772.900963998729
+
+
+Ro: 0.5 Alpha: 3 Beta: 8
+Ukupna dužina najkraćeg puta: 5611.090718360245
+
+
+Ro: 0.5 Alpha: 3 Beta: 9
+Ukupna dužina najkraćeg puta: 5645.723278865549
+
+
+Ro: 0.5 Alpha: 4 Beta: 1
+Ukupna dužina najkraćeg puta: 7048.027925185065
+
+
+Ro: 0.5 Alpha: 4 Beta: 2
+Ukupna dužina najkraćeg puta: 6167.180805295044
+
+
+Ro: 0.5 Alpha: 4 Beta: 3
+Ukupna dužina najkraćeg puta: 5800.764274459196
+
+
+Ro: 0.5 Alpha: 4 Beta: 4
+Ukupna dužina najkraćeg puta: 5905.69113740453
+
+
+Ro: 0.5 Alpha: 4 Beta: 5
+Ukupna dužina najkraćeg puta: 6053.277987102248
+
+
+Ro: 0.5 Alpha: 4 Beta: 6
+Ukupna dužina najkraćeg puta: 6035.753706366683
+
+
+Ro: 0.5 Alpha: 4 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.5 Alpha: 4 Beta: 8
+Ukupna dužina najkraćeg puta: 5600.296188975888
+
+
+Ro: 0.5 Alpha: 4 Beta: 9
+Ukupna dužina najkraćeg puta: 5644.296247727796
+
+
+Ro: 0.5 Alpha: 5 Beta: 1
+Ukupna dužina najkraćeg puta: 7561.9491232628825
+
+
+Ro: 0.5 Alpha: 5 Beta: 2
+Ukupna dužina najkraćeg puta: 6404.470973633494
+
+
+Ro: 0.5 Alpha: 5 Beta: 3
+Ukupna dužina najkraćeg puta: 6094.130401584931
+
+
+Ro: 0.5 Alpha: 5 Beta: 4
+Ukupna dužina najkraćeg puta: 5735.690424143182
+
+
+Ro: 0.5 Alpha: 5 Beta: 5
+Ukupna dužina najkraćeg puta: 5983.088870955199
+
+
+Ro: 0.5 Alpha: 5 Beta: 6
+Ukupna dužina najkraćeg puta: 5977.5426457319245
+
+
+Ro: 0.5 Alpha: 5 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.5 Alpha: 5 Beta: 8
+Ukupna dužina najkraćeg puta: 5611.090718360245
+
+
+Ro: 0.5 Alpha: 5 Beta: 9
+Ukupna dužina najkraćeg puta: 5824.19380890152
+
+
+Ro: 0.5 Alpha: 6 Beta: 1
+Ukupna dužina najkraćeg puta: 7370.661235375151
+
+
+Ro: 0.5 Alpha: 6 Beta: 2
+Ukupna dužina najkraćeg puta: 6429.3994217690415
+
+
+Ro: 0.5 Alpha: 6 Beta: 3
+Ukupna dužina najkraćeg puta: 6015.986752608912
+
+
+Ro: 0.5 Alpha: 6 Beta: 4
+Ukupna dužina najkraćeg puta: 5947.627803599067
+
+
+Ro: 0.5 Alpha: 6 Beta: 5
+Ukupna dužina najkraćeg puta: 6070.7526908058235
+
+
+Ro: 0.5 Alpha: 6 Beta: 6
+Ukupna dužina najkraćeg puta: 5866.086944457022
+
+
+Ro: 0.5 Alpha: 6 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.5 Alpha: 6 Beta: 8
+Ukupna dužina najkraćeg puta: 5611.090718360245
+
+
+Ro: 0.5 Alpha: 6 Beta: 9
+Ukupna dužina najkraćeg puta: 5793.764722604047
+
+
+Ro: 0.5 Alpha: 7 Beta: 1
+Ukupna dužina najkraćeg puta: 6718.6070220802385
+
+
+Ro: 0.5 Alpha: 7 Beta: 2
+Ukupna dužina najkraćeg puta: 6386.637223363365
+
+
+Ro: 0.5 Alpha: 7 Beta: 3
+Ukupna dužina najkraćeg puta: 5899.621820337601
+
+
+Ro: 0.5 Alpha: 7 Beta: 4
+Ukupna dužina najkraćeg puta: 5956.8378040709895
+
+
+Ro: 0.5 Alpha: 7 Beta: 5
+Ukupna dužina najkraćeg puta: 5851.275775344496
+
+
+Ro: 0.5 Alpha: 7 Beta: 6
+Ukupna dužina najkraćeg puta: 5966.820550805189
+
+
+Ro: 0.5 Alpha: 7 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.5 Alpha: 7 Beta: 8
+Ukupna dužina najkraćeg puta: 5755.243959168673
+
+
+Ro: 0.5 Alpha: 7 Beta: 9
+Ukupna dužina najkraćeg puta: 5813.201450071612
+
+
+Ro: 0.5 Alpha: 8 Beta: 1
+Ukupna dužina najkraćeg puta: 8194.05438718609
+
+
+Ro: 0.5 Alpha: 8 Beta: 2
+Ukupna dužina najkraćeg puta: 5840.6502454141755
+
+
+Ro: 0.5 Alpha: 8 Beta: 3
+Ukupna dužina najkraćeg puta: 6135.980097055497
+
+
+Ro: 0.5 Alpha: 8 Beta: 4
+Ukupna dužina najkraćeg puta: 5897.347567164608
+
+
+Ro: 0.5 Alpha: 8 Beta: 5
+Ukupna dužina najkraćeg puta: 5851.275775344496
+
+
+Ro: 0.5 Alpha: 8 Beta: 6
+Ukupna dužina najkraćeg puta: 5977.5426457319245
+
+
+Ro: 0.5 Alpha: 8 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.5 Alpha: 8 Beta: 8
+Ukupna dužina najkraćeg puta: 5755.243959168673
+
+
+Ro: 0.5 Alpha: 8 Beta: 9
+Ukupna dužina najkraćeg puta: 5934.080373377288
+
+
+Ro: 0.5 Alpha: 9 Beta: 1
+Ukupna dužina najkraćeg puta: 8618.99604117194
+
+
+Ro: 0.5 Alpha: 9 Beta: 2
+Ukupna dužina najkraćeg puta: 6514.3992567282685
+
+
+Ro: 0.5 Alpha: 9 Beta: 3
+Ukupna dužina najkraćeg puta: 6240.925939906322
+
+
+Ro: 0.5 Alpha: 9 Beta: 4
+Ukupna dužina najkraćeg puta: 5897.347567164608
+
+
+Ro: 0.5 Alpha: 9 Beta: 5
+Ukupna dužina najkraćeg puta: 5851.275775344496
+
+
+Ro: 0.5 Alpha: 9 Beta: 6
+Ukupna dužina najkraćeg puta: 6035.753706366683
+
+
+Ro: 0.5 Alpha: 9 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.5 Alpha: 9 Beta: 8
+Ukupna dužina najkraćeg puta: 5755.243959168673
+
+
+Ro: 0.5 Alpha: 9 Beta: 9
+Ukupna dužina najkraćeg puta: 5934.080373377288
+
+
+Ro: 0.9 Alpha: 1 Beta: 1
+Ukupna dužina najkraćeg puta: 5964.883073258121
+
+
+Ro: 0.9 Alpha: 1 Beta: 2
+Ukupna dužina najkraćeg puta: 5647.459041985506
+
+
+Ro: 0.9 Alpha: 1 Beta: 3
+Ukupna dužina najkraćeg puta: 5709.030548296425
+
+
+Ro: 0.9 Alpha: 1 Beta: 4
+Ukupna dužina najkraćeg puta: 5635.466440620458
+
+
+Ro: 0.9 Alpha: 1 Beta: 5
+Ukupna dužina najkraćeg puta: 5739.3469078375
+
+
+Ro: 0.9 Alpha: 1 Beta: 6
+Ukupna dužina najkraćeg puta: 5722.486161990468
+
+
+Ro: 0.9 Alpha: 1 Beta: 7
+Ukupna dužina najkraćeg puta: 5670.43639317854
+
+
+Ro: 0.9 Alpha: 1 Beta: 8
+Ukupna dužina najkraćeg puta: 5659.486915309697
+
+
+Ro: 0.9 Alpha: 1 Beta: 9
+Ukupna dužina najkraćeg puta: 5621.159947581206
+
+
+Ro: 0.9 Alpha: 2 Beta: 1
+Ukupna dužina najkraćeg puta: 7412.13998833232
+
+
+Ro: 0.9 Alpha: 2 Beta: 2
+Ukupna dužina najkraćeg puta: 6125.627504059335
+
+
+Ro: 0.9 Alpha: 2 Beta: 3
+Ukupna dužina najkraćeg puta: 6507.5392947379
+
+
+Ro: 0.9 Alpha: 2 Beta: 4
+Ukupna dužina najkraćeg puta: 5993.1841207239195
+
+
+Ro: 0.9 Alpha: 2 Beta: 5
+Ukupna dužina najkraćeg puta: 5767.030073012268
+
+
+Ro: 0.9 Alpha: 2 Beta: 6
+Ukupna dužina najkraćeg puta: 5956.359467871006
+
+
+Ro: 0.9 Alpha: 2 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.9 Alpha: 2 Beta: 8
+Ukupna dužina najkraćeg puta: 5600.296188975888
+
+
+Ro: 0.9 Alpha: 2 Beta: 9
+Ukupna dužina najkraćeg puta: 5644.296247727796
+
+
+Ro: 0.9 Alpha: 3 Beta: 1
+Ukupna dužina najkraćeg puta: 7850.29871942952
+
+
+Ro: 0.9 Alpha: 3 Beta: 2
+Ukupna dužina najkraćeg puta: 5961.76842581298
+
+
+Ro: 0.9 Alpha: 3 Beta: 3
+Ukupna dužina najkraćeg puta: 6096.148397544546
+
+
+Ro: 0.9 Alpha: 3 Beta: 4
+Ukupna dužina najkraćeg puta: 6064.266036273371
+
+
+Ro: 0.9 Alpha: 3 Beta: 5
+Ukupna dužina najkraćeg puta: 5986.78351641924
+
+
+Ro: 0.9 Alpha: 3 Beta: 6
+Ukupna dužina najkraćeg puta: 5977.5426457319245
+
+
+Ro: 0.9 Alpha: 3 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.9 Alpha: 3 Beta: 8
+Ukupna dužina najkraćeg puta: 5600.296188975888
+
+
+Ro: 0.9 Alpha: 3 Beta: 9
+Ukupna dužina najkraćeg puta: 5824.19380890152
+
+
+Ro: 0.9 Alpha: 4 Beta: 1
+Ukupna dužina najkraćeg puta: 8625.418312052148
+
+
+Ro: 0.9 Alpha: 4 Beta: 2
+Ukupna dužina najkraćeg puta: 6032.850958179561
+
+
+Ro: 0.9 Alpha: 4 Beta: 3
+Ukupna dužina najkraćeg puta: 6287.4767448080665
+
+
+Ro: 0.9 Alpha: 4 Beta: 4
+Ukupna dužina najkraćeg puta: 6142.634313872436
+
+
+Ro: 0.9 Alpha: 4 Beta: 5
+Ukupna dužina najkraćeg puta: 5851.275775344496
+
+
+Ro: 0.9 Alpha: 4 Beta: 6
+Ukupna dužina najkraćeg puta: 5851.4870998631
+
+
+Ro: 0.9 Alpha: 4 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.9 Alpha: 4 Beta: 8
+Ukupna dužina najkraćeg puta: 5611.090718360245
+
+
+Ro: 0.9 Alpha: 4 Beta: 9
+Ukupna dužina najkraćeg puta: 5768.224481048063
+
+
+Ro: 0.9 Alpha: 5 Beta: 1
+Ukupna dužina najkraćeg puta: 8792.531388139658
+
+
+Ro: 0.9 Alpha: 5 Beta: 2
+Ukupna dužina najkraćeg puta: 5706.709938274453
+
+
+Ro: 0.9 Alpha: 5 Beta: 3
+Ukupna dužina najkraćeg puta: 6234.3152403095355
+
+
+Ro: 0.9 Alpha: 5 Beta: 4
+Ukupna dužina najkraćeg puta: 6260.734001805655
+
+
+Ro: 0.9 Alpha: 5 Beta: 5
+Ukupna dužina najkraćeg puta: 5851.275775344496
+
+
+Ro: 0.9 Alpha: 5 Beta: 6
+Ukupna dužina najkraćeg puta: 6035.753706366683
+
+
+Ro: 0.9 Alpha: 5 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.9 Alpha: 5 Beta: 8
+Ukupna dužina najkraćeg puta: 5755.243959168673
+
+
+Ro: 0.9 Alpha: 5 Beta: 9
+Ukupna dužina najkraćeg puta: 5765.286145466953
+
+
+Ro: 0.9 Alpha: 6 Beta: 1
+Ukupna dužina najkraćeg puta: 8925.624369180961
+
+
+Ro: 0.9 Alpha: 6 Beta: 2
+Ukupna dužina najkraćeg puta: 6907.71097965638
+
+
+Ro: 0.9 Alpha: 6 Beta: 3
+Ukupna dužina najkraćeg puta: 5944.979705613852
+
+
+Ro: 0.9 Alpha: 6 Beta: 4
+Ukupna dužina najkraćeg puta: 6189.641034579567
+
+
+Ro: 0.9 Alpha: 6 Beta: 5
+Ukupna dužina najkraćeg puta: 5764.035596985469
+
+
+Ro: 0.9 Alpha: 6 Beta: 6
+Ukupna dužina najkraćeg puta: 6035.753706366683
+
+
+Ro: 0.9 Alpha: 6 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.9 Alpha: 6 Beta: 8
+Ukupna dužina najkraćeg puta: 5755.243959168673
+
+
+Ro: 0.9 Alpha: 6 Beta: 9
+Ukupna dužina najkraćeg puta: 5934.080373377288
+
+
+Ro: 0.9 Alpha: 7 Beta: 1
+Ukupna dužina najkraćeg puta: 9775.789710928051
+
+
+Ro: 0.9 Alpha: 7 Beta: 2
+Ukupna dužina najkraćeg puta: 6734.547680451479
+
+
+Ro: 0.9 Alpha: 7 Beta: 3
+Ukupna dužina najkraćeg puta: 6095.52799907475
+
+
+Ro: 0.9 Alpha: 7 Beta: 4
+Ukupna dužina najkraćeg puta: 6215.727230292236
+
+
+Ro: 0.9 Alpha: 7 Beta: 5
+Ukupna dužina najkraćeg puta: 5764.035596985469
+
+
+Ro: 0.9 Alpha: 7 Beta: 6
+Ukupna dužina najkraćeg puta: 6035.753706366683
+
+
+Ro: 0.9 Alpha: 7 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.9 Alpha: 7 Beta: 8
+Ukupna dužina najkraćeg puta: 5755.243959168673
+
+
+Ro: 0.9 Alpha: 7 Beta: 9
+Ukupna dužina najkraćeg puta: 5934.080373377288
+
+
+Ro: 0.9 Alpha: 8 Beta: 1
+Ukupna dužina najkraćeg puta: 10395.047892950266
+
+
+Ro: 0.9 Alpha: 8 Beta: 2
+Ukupna dužina najkraćeg puta: 6692.569351435536
+
+
+Ro: 0.9 Alpha: 8 Beta: 3
+Ukupna dužina najkraćeg puta: 6304.4973306369275
+
+
+Ro: 0.9 Alpha: 8 Beta: 4
+Ukupna dužina najkraćeg puta: 6131.123550489678
+
+
+Ro: 0.9 Alpha: 8 Beta: 5
+Ukupna dužina najkraćeg puta: 5842.2133874550545
+
+
+Ro: 0.9 Alpha: 8 Beta: 6
+Ukupna dužina najkraćeg puta: 6035.753706366683
+
+
+Ro: 0.9 Alpha: 8 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.9 Alpha: 8 Beta: 8
+Ukupna dužina najkraćeg puta: 5755.243959168673
+
+
+Ro: 0.9 Alpha: 8 Beta: 9
+Ukupna dužina najkraćeg puta: 5934.080373377288
+
+
+Ro: 0.9 Alpha: 9 Beta: 1
+Ukupna dužina najkraćeg puta: 10235.180482950627
+
+
+Ro: 0.9 Alpha: 9 Beta: 2
+Ukupna dužina najkraćeg puta: 6692.569351435536
+
+
+Ro: 0.9 Alpha: 9 Beta: 3
+Ukupna dužina najkraćeg puta: 6341.679396705127
+
+
+Ro: 0.9 Alpha: 9 Beta: 4
+Ukupna dužina najkraćeg puta: 6131.123550489678
+
+
+Ro: 0.9 Alpha: 9 Beta: 5
+Ukupna dužina najkraćeg puta: 5842.2133874550545
+
+
+Ro: 0.9 Alpha: 9 Beta: 6
+Ukupna dužina najkraćeg puta: 5820.826905490795
+
+
+Ro: 0.9 Alpha: 9 Beta: 7
+Ukupna dužina najkraćeg puta: 5789.488510586155
+
+
+Ro: 0.9 Alpha: 9 Beta: 8
+Ukupna dužina najkraćeg puta: 5755.243959168673
+
+
+Ro: 0.9 Alpha: 9 Beta: 9
+Ukupna dužina najkraćeg puta: 5934.080373377288
