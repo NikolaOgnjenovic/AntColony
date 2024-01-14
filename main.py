@@ -96,6 +96,7 @@ def run(n_ants: int, n_iterations: int, decay: float, alpha: float, beta: float,
     # Parsiranje gradova i matrice udaljenosti
     cities = parse('data_tsp.txt')
     distances = get_distance_matrix(cities)
+    plot(cities, [], 0, title)
 
     # Pokretanje algoritma
     ant_colony = AntColony(distances, n_ants, n_iterations, decay, alpha=alpha, beta=beta, seed=seed)
@@ -126,11 +127,11 @@ if __name__ == '__main__':
 
     # Konfiguracija sa povecanim uticajem distance
     print('Povećan uticaj distance:')
-    run(20, 100, 0.5, 1, 8, 42, "povecan uticaj distance")
+    run(20, 100, 0.5, 1, 8, 42, "povećan uticaj distance")
 
     # Konfiguracija sa povecanim uticajem feromona
     print('Povećan uticaj feromona:')
-    run(20, 100, 0.5, 9, 1, 42, "povecan uticaj feromona")
+    run(20, 100, 0.5, 9, 1, 42, "povećan uticaj feromona")
 
     # Konfiguracija sa sporijim isparavanjem feromona
     print('Sporije isparavanje feromona:')
@@ -138,4 +139,4 @@ if __name__ == '__main__':
 
     # Konfiguracija sa brzim isparavanjem feromona
     print('Brže isparavanje feromona:')
-    run(20, 100, 0.9, 1, 1, 42, "brze isparavanje feromona")
+    run(20, 100, 0.9, 1, 1, 42, "brže isparavanje feromona")
