@@ -96,7 +96,6 @@ def run(n_ants: int, n_iterations: int, decay: float, alpha: float, beta: float,
     # Parsiranje gradova i matrice udaljenosti
     cities = parse('data_tsp.txt')
     distances = get_distance_matrix(cities)
-    plot(cities, [], 0, title)
 
     # Pokretanje algoritma
     ant_colony = AntColony(distances, n_ants, n_iterations, decay, alpha=alpha, beta=beta, seed=seed)
